@@ -30,9 +30,11 @@
   "dependencies": {
     "bootstrap": "^3.3.6",
     "history": "^1.17.0",
+    "material-ui": "^0.14.0",
     "react": "^0.14.5",
     "react-dom": "^0.14.5",
     "react-redux": "^4.0.6",
-    "react-router": "^1.0.3"
+    "react-router": "^1.0.3",
+    "react-tap-event-plugin": "^0.2.1"
   }
 }
