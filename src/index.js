@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route } from 'react-router'
+import { Router, Route, IndexRoute, browserHistory } from 'react-router'
 
 import injectTapEventPlugin from 'react-tap-event-plugin';
 
 import Main from './components/Main';
+import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
 
@@ -15,11 +16,11 @@ import Contact from './components/Contact';
 injectTapEventPlugin();
 
 ReactDOM.render((
-  <Router>
+  <Router history={browserHistory}>
     <Route path="/" component={Main}>
+      <IndexRoute component={Home}/>
       <Route path="about" component={About}/>
       <Route path="contact" component={Contact}/>
-      <Route path="*" component={Main}/>
     </Route>
   </Router>
 ), document.getElementById('root'))

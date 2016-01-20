@@ -1,0 +1,11 @@
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #CCC;
+$grid-gutter-width: 0;
+
+$icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
+@import "~bootstrap-sass/assets/stylesheets/_bootstrap";
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
